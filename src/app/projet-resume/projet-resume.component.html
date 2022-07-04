@@ -1,4 +1,5 @@
 <div class = "projet-resume">
+    <p *ngIf="projet.date" class = "date">{{projet.date | date: "dd/MM/yyyy"}}</p>
     <h2> {{projet.titre | titlecase}} </h2>
     <p> {{ projet.descriptionRapide }}</p>
     <button (click)="onViewFaceSnap()">Voir</button>

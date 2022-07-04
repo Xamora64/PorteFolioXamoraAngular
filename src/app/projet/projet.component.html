@@ -1,4 +1,6 @@
 <div class = "projet-resume">
+    
+    <p *ngIf="projet.language" class = "language"><u>Language:</u> {{projet.language}}</p>
     <h2> {{projet.titre | titlecase}} </h2>
     <button *ngIf="projet.imageUrl" (click)="cliqueMoins()" type="button" class="moins"> < </button>
     <img *ngIf="projet.imageUrl" [src]="projet.imageUrl?.[idImage]" [alt] = "projet.titre">
