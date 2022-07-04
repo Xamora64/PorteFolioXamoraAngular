@@ -1,0 +1,12 @@
+<div class = "projet-resume">
+    <h2> {{projet.titre | titlecase}} </h2>
+    <button *ngIf="projet.imageUrl" (click)="cliqueMoins()" type="button" class="moins"> < </button>
+    <img *ngIf="projet.imageUrl" [src]="projet.imageUrl?.[idImage]" [alt] = "projet.titre">
+    <button *ngIf="projet.imageUrl" (click)="cliquePlus()" type="button" class="plus"> > </button>
+    <p *ngIf="projet.imageUrl" class="numerotation"><i>{{idImage + 1}}/{{projet.imageUrl?.length}}</i></p>
+    <p *ngIf = "!projet.imageUrl">Aucune Image 😭</p>
+    <p *ngIf="projet.date">Projet commencé le {{ projet.date | date: "dd/MM/yyyy" }}</p>
+    <p>{{ projet.description }}</p>
+</div>
+
+<button (click)="cliqueLienProjet()" *ngIf="projet.lienProjet" class="lienUtile">Lien Projet</button>
