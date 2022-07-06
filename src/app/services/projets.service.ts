@@ -44,6 +44,16 @@ export class ProjetService {
         imageUrl: ["assets/projet-3/mage1.png", "assets/projet-3/mage2.png", "assets/projet-3/mage3.png"],
         lienProjet: "https://github.com/Xamora64/ProjectNSI",
       },
+      {
+        id : 4,
+        titre : "Projet NSI 'Echec'",
+        language: "Python",
+        descriptionRapide :"Un projet NSI durant ma terminal",
+        description : "Ce projet NSI avait pour but de faire un jeu d'échec, on a pu faire un jeu d'échec fonctionnelle.",
+        date : new Date(2022, 3, 15),
+        imageUrl: ["assets/projet-4/Echec1.png", "assets/projet-4/Echec2.png", "assets/projet-4/Echec3.png","assets/projet-4/Echec4.png"],
+        lienProjet: "https://github.com/Xamora64/EchecNSI",
+      },
       
   ]
 
